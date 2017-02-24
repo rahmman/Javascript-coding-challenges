@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exercise 2</title>
+<b>Write a JavaScript program to print the contents of the current window</b>
+
+</head>
+<body>
+  <br /><br /><br />
+  
+<button onclick="printPage()">Print</button><br /><br /><br /><br />
+<section class="toggle">
+<label> <b>What are the advantages of using JavaScript?</b> </label>
+<div class="toggle-content">
+<p>Following are the advantages of using JavaScript &minus;</p>
+<ul class="list">
+<li><p><b>Less server interaction &minus;</b> You can validate user input before sending the page off to the server. This saves server traffic, which means less load on your server.</p></li>
+<li><p><b>Immediate feedback to the visitors &minus;</b> They don't have to wait for a page reload to see if they have forgotten to enter something.</p></li>
+<li><p><b>Increased interactivity &minus;</b> You can create interfaces that react when the user hovers over them with a mouse or activates them via the keyboard.</p></li>
+<li><p><b>Richer interfaces &minus;</b> You can use JavaScript to include such items as drag-and-drop components and sliders to give a Rich Interface to your site visitors.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> <b>What are disadvantages of using JavaScript?</b></label>
+<div class="toggle-content">
+<p>We can not treat JavaScript as a full fledged programming language. It lacks the following important features &minus;</p>
+<ul class="list">
+<li><p>Client-side JavaScript does not allow the reading or writing of files. This has been kept for security reason.</p></li>
+<li><p>JavaScript can not be used for Networking applications because there is no such support available.</p></li>
+<li><p>JavaScript doesn't have any multithreading or multiprocess capabilities.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label> <b>Is JavaScript a case-sensitive language?</b></label>
+<div class="toggle-content">
+<p>Yes! JavaScript is a case-sensitive language. This means that language keywords, variables, function names, and any other identifiers must always be typed with a consistent capitalization of letters.</p>
+</div>
+</section>
+<section class="toggle">
+<label> How can you create an Object in JavaScript?</label>
+<div class="toggle-content">
+<p>JavaScript supports Object concept very well. You can create an object using the object literal as follows &minus;</p>
+<pre class="prettyprint notranslate">
+var emp = {
+   name: "Zara",
+   age: 10
+};
+</pre>
+</div>
+</section>
+<section class="toggle">
+<label> <b>How can you read properties of an Object in JavaScript?</b></label>
+<div class="toggle-content">
+<p>You can write and read properties of an object using the dot notation as follows &minus;</p>
+<pre class="prettyprint notranslate">
+// Getting object properties
+emp.name  // ==&gt; Zara
+emp.age   // ==&gt; 10
+// Setting object properties
+emp.name = "Daisy"  // &lt;== Daisy
+emp.age  =  20      // &lt;== 20
+</pre>
+</div>
+</section>
+<section class="toggle">
+<label><b>How can you create an Array in JavaScript?</b> </label>
+<div class="toggle-content">
+<p>You can define arrays using the array literal as follows &minus;</p>
+<pre class="prettyprint notranslate">
+var x = [];
+var y = [1, 2, 3, 4, 5];
+</pre>
+</div>
+</section>
+<section class="toggle">
+<label><b>How to read elements of an array in JavaScript?</b> </label>
+<div class="toggle-content">
+<p>An array has a length property that is useful for iteration. We can read elements of an array as follows &minus;</p>
+<pre class="prettyprint notranslate">
+var x = [1, 2, 3, 4, 5];
+for (var i = 0; i &lt; x.length; i++) {
+   // Do something with x[i]
+}
+</pre>
+</div>
+</section>
+  <script>
+function printPage() {
+  window.print()
+}
+
+  </script>
+</body>
+</html>

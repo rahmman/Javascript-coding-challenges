@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exercise 4</title>
+ Calculate number of days left until next Christmas. <br />
+
+</head>
+<body>
+<h3>Solution : </h3>
+  <script>
+var today = new Date()
+var xMas= new Date(today.getFullYear(), 11,25)
+var xMasTiem=xMas.getTime()
+var todayTime= today.getTime()
+
+var oneDay= 1000*24*60*60
+
+document.write(Math.round ((xMasTiem-todayTime)/oneDay)+ " days left until next Christmas")
+  </script>
+</body>
+</html>

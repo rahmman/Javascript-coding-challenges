@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exercise 3</title>
+Write a JavaScript program to get the current date.
+
+. <br />
+<mark>Expected Output : </mark> <b>mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy</b>
+
+
+</head>
+<body>
+<h3>Solution : </h3>
+  <script>
+var today = new Date()
+var mm= today.getMonth()+1
+var dd= today.getDay()+1
+var yyyy= today.getFullYear()
+if (mm<10){
+   mm= "0"+ mm
+}
+if (dd<10){
+ dd= "0" + dd
+}
+document.write (mm+ "-" +dd+ "-" +yyyy +"<br />")
+document.write (mm+ "/" +dd+ "/" +yyyy)
+  </script>
+</body>
+</html>
